@@ -1,0 +1,15 @@
+{
+  "dataset_path": "D:\\cybersec\\mnt\\agents\\output\\dataset\\processed\\dataset.json",
+  "llm_model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "max_seq_len": 256,
+  "batch_size": 32,
+  "epochs": 15,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "hidden_dim": 256,
+  "static_feat_dim": 48,
+  "dropout": 0.3,
+  "seed": 42,
+  "results_dir": "D:\\cybersec_2\\results",
+  "checkpoints_dir": "D:\\cybersec_2\\checkpoints"
+}

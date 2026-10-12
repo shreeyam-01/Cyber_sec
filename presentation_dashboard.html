@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM-Enhanced Static Analysis Framework - Project Dashboard</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --accent: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --dark: #0f172a;
+            --card-bg: #ffffff;
+            --bg: #f8fafc;
+            --text: #334155;
+            --text-heading: #0f172a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background: var(--bg); color: var(--text); padding: 30px; line-height: 1.6; }
+        .container { max-width: 1280px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color: white; padding: 40px; border-radius: 16px; margin-bottom: 30px; box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25); }
+        header h1 { font-size: 28px; font-weight: 800; margin-bottom: 10px; }
+        header p { font-size: 16px; opacity: 0.9; max-width: 900px; }
+        .meta-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-top: 15px; }
+        
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .card { background: var(--card-bg); padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .card-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 8px; }
+        .card-value { font-size: 32px; font-weight: 800; color: var(--text-heading); }
+        .card-sub { font-size: 13px; font-weight: 500; margin-top: 6px; }
+        .text-green { color: var(--accent); }
+        .text-blue { color: var(--primary-light); }
+        .text-amber { color: var(--warning); }
+        .text-red { color: var(--danger); }
+
+        .section { background: var(--card-bg); padding: 30px; border-radius: 14px; margin-bottom: 30px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #f1f5f9; }
+        .section-title { font-size: 20px; font-weight: 700; color: var(--text-heading); }
+
+        .figure-container { text-align: center; margin: 20px 0; }
+        .figure-container img { max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .figure-caption { font-size: 14px; color: #64748b; margin-top: 10px; font-weight: 500; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { padding: 12px 16px; text-align: left; font-size: 14px; }
+        th { background: #f8fafc; font-weight: 700; color: #334155; border-bottom: 2px solid #e2e8f0; }
+        td { border-bottom: 1px solid #f1f5f9; }
+        tr:hover td { background: #f8fafc; }
+        .highlight-row { background: #eff6ff !important; font-weight: 600; }
+        .badge-success { background: #dcfce7; color: #15803d; padding: 4px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+        
+        .footer { text-align: center; color: #94a3b8; font-size: 13px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>LLM-Enhanced Static Analysis Framework for Vulnerability Detection</h1>
+        <p>A dual-modality framework combining domain-informed static code analysis with localized Code LLM representations to detect known vulnerabilities and generalize to unseen CWE categories.</p>
+        <span class="meta-badge">Dataset: Juliet C/C++ Test Suite (NIST)</span>
+        <span class="meta-badge">Hardware: Local NVIDIA RTX 3050 GPU (Zero Cloud APIs)</span>
+        <span class="meta-badge">Evaluation: 15 Seen CWEs vs. 5 Held-Out CWEs</span>
+    </header>
+
+    <!-- Top Metric Cards -->
+    <div class="grid-cards">
+        <div class="card">
+            <div class="card-title">Seen CWE Recall</div>
+            <div class="card-value text-blue">99.65%</div>
+            <div class="card-sub text-green">846 / 849 Vulnerabilities Caught</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Seen CWE F1-Score</div>
+            <div class="card-value text-blue">93.22%</div>
+            <div class="card-sub text-green">Highest Among All Baselines</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Unseen CWE Precision</div>
+            <div class="card-value text-green">96.03%</div>
+            <div class="card-sub text-green">Only 35 False Alarms / 1058 Safe</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Unseen False Alarm Rate (FPR)</div>
+            <div class="card-value text-green">3.31%</div>
+            <div class="card-sub text-green">Lowest False Positive Rate</div>
+        </div>
+    </div>
+
+    <!-- Figure 1: Architecture -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">1. System Architecture: Gated Cross-Modality Fusion (GCFN)</div>
+        </div>
+        <div class="figure-container">
+            <img src="results/figures/framework_architecture.png" alt="Framework Architecture">
+            <div class="figure-caption">Figure 1: Dual-branch architecture integrating a 48-dimensional static analysis feature extractor and a local 896-dimensional Code LLM semantic encoder with adaptive gating.</div>
+        </div>
+    </div>
+
+    <!-- Figure 2: Baseline Comparison -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">2. Comparative Performance on Seen vs. Unseen CWE Categories</div>
+        </div>
+        <div class="figure-container">
+            <img src="results/figures/baseline_comparison.png" alt="Baseline Comparison">
+            <div class="figure-caption">Figure 2: Comprehensive benchmark against standard Machine Learning baselines (SVM, Random Forest, XGBoost) on identical sanitized dataset splits.</div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Evaluation Split</th>
+                    <th>Model</th>
+                    <th>Recall (%)</th>
+                    <th>Precision (%)</th>
+                    <th>F1-Score (%)</th>
+                    <th>FPR (%)</th>
+                    <th>Accuracy (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4"><strong>Seen CWEs (15 Classes)</strong></td>
+                    <td>SVM</td>
+                    <td>96.35%</td>
+                    <td>86.47%</td>
+                    <td>91.14%</td>
+                    <td>15.08%</td>
+                    <td>90.64%</td>
+                </tr>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>94.11%</td>
+                    <td>89.67%</td>
+                    <td>91.84%</td>
+                    <td>10.84%</td>
+                    <td>91.64%</td>
+                </tr>
+                <tr>
+                    <td>XGBoost</td>
+                    <td>99.06%</td>
+                    <td>86.61%</td>
+                    <td>92.42%</td>
+                    <td>15.31%</td>
+                    <td>91.87%</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td><strong>Proposed GCFN (Ours)</strong></td>
+                    <td><strong>99.65%</strong></td>
+                    <td><strong>87.58%</strong></td>
+                    <td><strong>93.22%</strong></td>
+                    <td><strong>14.13%</strong></td>
+                    <td><strong>92.76%</strong></td>
+                </tr>
+                <tr>
+                    <td rowspan="4"><strong>Unseen CWEs (5 Held-Out Classes)</strong></td>
+                    <td>SVM (Collapsed)</td>
+                    <td>50.38%</td>
+                    <td>83.67%</td>
+                    <td>62.89%</td>
+                    <td>9.83%</td>
+                    <td>70.27%</td>
+                </tr>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>90.36%</td>
+                    <td>94.19%</td>
+                    <td>92.23%</td>
+                    <td>5.58%</td>
+                    <td>92.39%</td>
+                </tr>
+                <tr>
+                    <td>XGBoost</td>
+                    <td>83.84%</td>
+                    <td>92.49%</td>
+                    <td>87.95%</td>
+                    <td>6.81%</td>
+                    <td>88.52%</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td><strong>Proposed GCFN (Ours)</strong></td>
+                    <td><strong>80.06%</strong></td>
+                    <td><strong>96.03%</strong></td>
+                    <td><strong>87.32%</strong></td>
+                    <td><strong>3.31%</strong></td>
+                    <td><strong>88.37%</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Figure 3: Unseen Generalization Breakdown -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">3. Generalization Breakdown Across 5 Held-Out Vulnerability Classes</div>
+        </div>
+        <div class="figure-container">
+            <img src="results/figures/unseen_cwe_breakdown.png" alt="Unseen Breakdown">
+            <div class="figure-caption">Figure 3: Per-CWE metrics on held-out vulnerability categories that were completely excluded from model training and validation.</div>
+        </div>
+    </div>
+
+    <!-- Figure 4: Confusion Matrices -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">4. Confusion Matrices (Seen & Unseen Splits)</div>
+        </div>
+        <div class="figure-container">
+            <img src="results/figures/confusion_matrices.png" alt="Confusion Matrices">
+            <div class="figure-caption">Figure 4: True Positive (TP), False Positive (FP), True Negative (TN), and False Negative (FN) counts on the held-out test splits.</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Project: LLM-Enhanced Static Analysis Framework &bull; Location: D:\cybersec_2 &bull; NIST Juliet C/C++ Evaluation
+    </div>
+</div>
+</body>
+</html>

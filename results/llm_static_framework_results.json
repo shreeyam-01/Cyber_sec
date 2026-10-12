@@ -1,0 +1,232 @@
+{
+  "framework": "LLM-Enhanced Static Analysis Framework (GCFN)",
+  "backbone": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "tuning_threshold": 0.45,
+  "validation_f1": 93.29,
+  "test_seen": {
+    "recall": 99.65,
+    "precision": 87.58,
+    "f1": 93.22,
+    "fpr": 14.13,
+    "accuracy": 92.76,
+    "tp": 846,
+    "fp": 120,
+    "fn": 3,
+    "tn": 729,
+    "cwe_stats": {
+      "CWE-121": {
+        "tp": 55,
+        "fp": 16,
+        "fn": 0,
+        "tn": 39,
+        "recall": 100.0,
+        "precision": 77.46,
+        "f1": 87.3,
+        "fpr": 29.09
+      },
+      "CWE-122": {
+        "tp": 49,
+        "fp": 9,
+        "fn": 0,
+        "tn": 40,
+        "recall": 100.0,
+        "precision": 84.48,
+        "f1": 91.59,
+        "fpr": 18.37
+      },
+      "CWE-124": {
+        "tp": 54,
+        "fp": 17,
+        "fn": 1,
+        "tn": 38,
+        "recall": 98.18,
+        "precision": 76.06,
+        "f1": 85.71,
+        "fpr": 30.91
+      },
+      "CWE-126": {
+        "tp": 70,
+        "fp": 14,
+        "fn": 1,
+        "tn": 57,
+        "recall": 98.59,
+        "precision": 83.33,
+        "f1": 90.32,
+        "fpr": 19.72
+      },
+      "CWE-127": {
+        "tp": 62,
+        "fp": 15,
+        "fn": 0,
+        "tn": 47,
+        "recall": 100.0,
+        "precision": 80.52,
+        "f1": 89.21,
+        "fpr": 24.19
+      },
+      "CWE-190": {
+        "tp": 70,
+        "fp": 0,
+        "fn": 0,
+        "tn": 70,
+        "recall": 100.0,
+        "precision": 100.0,
+        "f1": 100.0,
+        "fpr": 0.0
+      },
+      "CWE-191": {
+        "tp": 38,
+        "fp": 0,
+        "fn": 0,
+        "tn": 38,
+        "recall": 100.0,
+        "precision": 100.0,
+        "f1": 100.0,
+        "fpr": 0.0
+      },
+      "CWE-194": {
+        "tp": 71,
+        "fp": 16,
+        "fn": 0,
+        "tn": 55,
+        "recall": 100.0,
+        "precision": 81.61,
+        "f1": 89.87,
+        "fpr": 22.54
+      },
+      "CWE-195": {
+        "tp": 60,
+        "fp": 16,
+        "fn": 0,
+        "tn": 44,
+        "recall": 100.0,
+        "precision": 78.95,
+        "f1": 88.24,
+        "fpr": 26.67
+      },
+      "CWE-197": {
+        "tp": 59,
+        "fp": 16,
+        "fn": 1,
+        "tn": 44,
+        "recall": 98.33,
+        "precision": 78.67,
+        "f1": 87.41,
+        "fpr": 26.67
+      },
+      "CWE-369": {
+        "tp": 69,
+        "fp": 1,
+        "fn": 0,
+        "tn": 68,
+        "recall": 100.0,
+        "precision": 98.57,
+        "f1": 99.28,
+        "fpr": 1.45
+      },
+      "CWE-415": {
+        "tp": 56,
+        "fp": 0,
+        "fn": 0,
+        "tn": 56,
+        "recall": 100.0,
+        "precision": 100.0,
+        "f1": 100.0,
+        "fpr": 0.0
+      },
+      "CWE-416": {
+        "tp": 17,
+        "fp": 0,
+        "fn": 0,
+        "tn": 17,
+        "recall": 100.0,
+        "precision": 100.0,
+        "f1": 100.0,
+        "fpr": 0.0
+      },
+      "CWE-457": {
+        "tp": 60,
+        "fp": 0,
+        "fn": 0,
+        "tn": 60,
+        "recall": 100.0,
+        "precision": 100.0,
+        "f1": 100.0,
+        "fpr": 0.0
+      },
+      "CWE-476": {
+        "tp": 56,
+        "fp": 0,
+        "fn": 0,
+        "tn": 56,
+        "recall": 100.0,
+        "precision": 100.0,
+        "f1": 100.0,
+        "fpr": 0.0
+      }
+    }
+  },
+  "test_unseen": {
+    "recall": 80.06,
+    "precision": 96.03,
+    "f1": 87.32,
+    "fpr": 3.31,
+    "accuracy": 88.37,
+    "tp": 847,
+    "fp": 35,
+    "fn": 211,
+    "tn": 1023,
+    "cwe_stats": {
+      "CWE-123": {
+        "tp": 125,
+        "fp": 21,
+        "fn": 43,
+        "tn": 147,
+        "recall": 74.4,
+        "precision": 85.62,
+        "f1": 79.62,
+        "fpr": 12.5
+      },
+      "CWE-134": {
+        "tp": 353,
+        "fp": 14,
+        "fn": 47,
+        "tn": 386,
+        "recall": 88.25,
+        "precision": 96.19,
+        "f1": 92.05,
+        "fpr": 3.5
+      },
+      "CWE-188": {
+        "tp": 36,
+        "fp": 0,
+        "fn": 0,
+        "tn": 36,
+        "recall": 100.0,
+        "precision": 100.0,
+        "f1": 100.0,
+        "fpr": 0.0
+      },
+      "CWE-253": {
+        "tp": 288,
+        "fp": 0,
+        "fn": 112,
+        "tn": 400,
+        "recall": 72.0,
+        "precision": 100.0,
+        "f1": 83.72,
+        "fpr": 0.0
+      },
+      "CWE-327": {
+        "tp": 45,
+        "fp": 0,
+        "fn": 9,
+        "tn": 54,
+        "recall": 83.33,
+        "precision": 100.0,
+        "f1": 90.91,
+        "fpr": 0.0
+      }
+    }
+  }
+}
