@@ -1,0 +1,769 @@
+{
+  "phase1": {
+    "CWE-127": {
+      "train": 560,
+      "val": 116,
+      "test_seen": 124,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-457": {
+      "train": 570,
+      "val": 110,
+      "test_seen": 120,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-121": {
+      "train": 580,
+      "val": 110,
+      "test_seen": 110,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-415": {
+      "train": 446,
+      "val": 114,
+      "test_seen": 112,
+      "test_held_out": 0,
+      "total": 672
+    },
+    "CWE-369": {
+      "train": 546,
+      "val": 116,
+      "test_seen": 138,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-197": {
+      "train": 554,
+      "val": 126,
+      "test_seen": 120,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-194": {
+      "train": 558,
+      "val": 100,
+      "test_seen": 142,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-124": {
+      "train": 572,
+      "val": 118,
+      "test_seen": 110,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-195": {
+      "train": 574,
+      "val": 106,
+      "test_seen": 120,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-190": {
+      "train": 562,
+      "val": 98,
+      "test_seen": 140,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-191": {
+      "train": 562,
+      "val": 162,
+      "test_seen": 76,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-122": {
+      "train": 586,
+      "val": 116,
+      "test_seen": 98,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-416": {
+      "train": 204,
+      "val": 62,
+      "test_seen": 34,
+      "test_held_out": 0,
+      "total": 300
+    },
+    "CWE-476": {
+      "train": 514,
+      "val": 118,
+      "test_seen": 112,
+      "test_held_out": 0,
+      "total": 744
+    },
+    "CWE-126": {
+      "train": 532,
+      "val": 126,
+      "test_seen": 142,
+      "test_held_out": 0,
+      "total": 800
+    },
+    "CWE-134": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 800,
+      "total": 800
+    },
+    "CWE-123": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 336,
+      "total": 336
+    },
+    "CWE-253": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 800,
+      "total": 800
+    },
+    "CWE-327": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 108,
+      "total": 108
+    },
+    "CWE-188": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 72,
+      "total": 72
+    }
+  },
+  "phase2": {
+    "CWE-400": {
+      "train": 280,
+      "val": 64,
+      "test_seen": 56,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-252": {
+      "train": 268,
+      "val": 72,
+      "test_seen": 60,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-391": {
+      "train": 72,
+      "val": 10,
+      "test_seen": 26,
+      "test_held_out": 0,
+      "total": 108
+    },
+    "CWE-401": {
+      "train": 288,
+      "val": 54,
+      "test_seen": 58,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-761": {
+      "train": 272,
+      "val": 68,
+      "test_seen": 60,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-226": {
+      "train": 106,
+      "val": 20,
+      "test_seen": 18,
+      "test_held_out": 0,
+      "total": 144
+    },
+    "CWE-690": {
+      "train": 280,
+      "val": 70,
+      "test_seen": 50,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-404": {
+      "train": 294,
+      "val": 52,
+      "test_seen": 54,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-665": {
+      "train": 262,
+      "val": 62,
+      "test_seen": 76,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-590": {
+      "train": 280,
+      "val": 58,
+      "test_seen": 62,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-563": {
+      "train": 284,
+      "val": 64,
+      "test_seen": 52,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-427": {
+      "train": 292,
+      "val": 50,
+      "test_seen": 58,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-789": {
+      "train": 270,
+      "val": 72,
+      "test_seen": 58,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-325": {
+      "train": 104,
+      "val": 18,
+      "test_seen": 22,
+      "test_held_out": 0,
+      "total": 144
+    },
+    "CWE-758": {
+      "train": 288,
+      "val": 44,
+      "test_seen": 68,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-176": {
+      "train": 74,
+      "val": 28,
+      "test_seen": 10,
+      "test_held_out": 0,
+      "total": 112
+    },
+    "CWE-773": {
+      "train": 222,
+      "val": 68,
+      "test_seen": 46,
+      "test_held_out": 0,
+      "total": 336
+    },
+    "CWE-617": {
+      "train": 294,
+      "val": 40,
+      "test_seen": 66,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-667": {
+      "train": 20,
+      "val": 6,
+      "test_seen": 10,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-675": {
+      "train": 286,
+      "val": 48,
+      "test_seen": 66,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-468": {
+      "train": 44,
+      "val": 16,
+      "test_seen": 12,
+      "test_held_out": 0,
+      "total": 72
+    },
+    "CWE-398": {
+      "train": 252,
+      "val": 58,
+      "test_seen": 52,
+      "test_held_out": 0,
+      "total": 362
+    },
+    "CWE-680": {
+      "train": 290,
+      "val": 54,
+      "test_seen": 56,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-467": {
+      "train": 76,
+      "val": 10,
+      "test_seen": 22,
+      "test_held_out": 0,
+      "total": 108
+    },
+    "CWE-478": {
+      "train": 24,
+      "val": 8,
+      "test_seen": 4,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-688": {
+      "train": 24,
+      "val": 10,
+      "test_seen": 2,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-606": {
+      "train": 268,
+      "val": 68,
+      "test_seen": 64,
+      "test_held_out": 0,
+      "total": 400
+    },
+    "CWE-535": {
+      "train": 48,
+      "val": 6,
+      "test_seen": 18,
+      "test_held_out": 0,
+      "total": 72
+    },
+    "CWE-835": {
+      "train": 12,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 0,
+      "total": 12
+    },
+    "CWE-775": {
+      "train": 252,
+      "val": 38,
+      "test_seen": 46,
+      "test_held_out": 0,
+      "total": 336
+    },
+    "CWE-588": {
+      "train": 74,
+      "val": 18,
+      "test_seen": 8,
+      "test_held_out": 0,
+      "total": 100
+    },
+    "CWE-591": {
+      "train": 160,
+      "val": 18,
+      "test_seen": 46,
+      "test_held_out": 0,
+      "total": 224
+    },
+    "CWE-511": {
+      "train": 104,
+      "val": 16,
+      "test_seen": 24,
+      "test_held_out": 0,
+      "total": 144
+    },
+    "CWE-459": {
+      "train": 50,
+      "val": 8,
+      "test_seen": 14,
+      "test_held_out": 0,
+      "total": 72
+    },
+    "CWE-15": {
+      "train": 66,
+      "val": 22,
+      "test_seen": 24,
+      "test_held_out": 0,
+      "total": 112
+    },
+    "CWE-390": {
+      "train": 98,
+      "val": 20,
+      "test_seen": 26,
+      "test_held_out": 0,
+      "total": 144
+    },
+    "CWE-666": {
+      "train": 126,
+      "val": 36,
+      "test_seen": 18,
+      "test_held_out": 0,
+      "total": 180
+    },
+    "CWE-464": {
+      "train": 72,
+      "val": 24,
+      "test_seen": 16,
+      "test_held_out": 0,
+      "total": 112
+    },
+    "CWE-685": {
+      "train": 20,
+      "val": 10,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-483": {
+      "train": 28,
+      "val": 6,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 40
+    },
+    "CWE-223": {
+      "train": 28,
+      "val": 0,
+      "test_seen": 8,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-510": {
+      "train": 66,
+      "val": 18,
+      "test_seen": 22,
+      "test_held_out": 0,
+      "total": 106
+    },
+    "CWE-242": {
+      "train": 26,
+      "val": 2,
+      "test_seen": 8,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-843": {
+      "train": 130,
+      "val": 44,
+      "test_seen": 26,
+      "test_held_out": 0,
+      "total": 200
+    },
+    "CWE-479": {
+      "train": 28,
+      "val": 2,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-469": {
+      "train": 50,
+      "val": 12,
+      "test_seen": 10,
+      "test_held_out": 0,
+      "total": 72
+    },
+    "CWE-526": {
+      "train": 28,
+      "val": 6,
+      "test_seen": 2,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-196": {
+      "train": 32,
+      "val": 2,
+      "test_seen": 2,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-546": {
+      "train": 134,
+      "val": 20,
+      "test_seen": 26,
+      "test_held_out": 0,
+      "total": 180
+    },
+    "CWE-681": {
+      "train": 84,
+      "val": 18,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 108
+    },
+    "CWE-244": {
+      "train": 94,
+      "val": 30,
+      "test_seen": 20,
+      "test_held_out": 0,
+      "total": 144
+    },
+    "CWE-534": {
+      "train": 52,
+      "val": 10,
+      "test_seen": 10,
+      "test_held_out": 0,
+      "total": 72
+    },
+    "CWE-482": {
+      "train": 24,
+      "val": 4,
+      "test_seen": 8,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-570": {
+      "train": 24,
+      "val": 2,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 32
+    },
+    "CWE-832": {
+      "train": 26,
+      "val": 6,
+      "test_seen": 4,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-481": {
+      "train": 28,
+      "val": 4,
+      "test_seen": 4,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-475": {
+      "train": 50,
+      "val": 18,
+      "test_seen": 4,
+      "test_held_out": 0,
+      "total": 72
+    },
+    "CWE-571": {
+      "train": 26,
+      "val": 0,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 32
+    },
+    "CWE-484": {
+      "train": 24,
+      "val": 6,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-587": {
+      "train": 26,
+      "val": 6,
+      "test_seen": 4,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-247": {
+      "train": 32,
+      "val": 2,
+      "test_seen": 2,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-562": {
+      "train": 4,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 0,
+      "total": 4
+    },
+    "CWE-222": {
+      "train": 28,
+      "val": 6,
+      "test_seen": 2,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-615": {
+      "train": 24,
+      "val": 8,
+      "test_seen": 4,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-480": {
+      "train": 24,
+      "val": 10,
+      "test_seen": 2,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-605": {
+      "train": 16,
+      "val": 4,
+      "test_seen": 16,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-785": {
+      "train": 22,
+      "val": 8,
+      "test_seen": 6,
+      "test_held_out": 0,
+      "total": 36
+    },
+    "CWE-561": {
+      "train": 2,
+      "val": 2,
+      "test_seen": 0,
+      "test_held_out": 0,
+      "total": 4
+    },
+    "CWE-674": {
+      "train": 2,
+      "val": 2,
+      "test_seen": 0,
+      "test_held_out": 0,
+      "total": 4
+    },
+    "CWE-78": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 400,
+      "total": 400
+    },
+    "CWE-90": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 400,
+      "total": 400
+    },
+    "CWE-114": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 400,
+      "total": 400
+    },
+    "CWE-256": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 224,
+      "total": 224
+    },
+    "CWE-259": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 224,
+      "total": 224
+    },
+    "CWE-272": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 400,
+      "total": 400
+    },
+    "CWE-273": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 72,
+      "total": 72
+    },
+    "CWE-284": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 400,
+      "total": 400
+    },
+    "CWE-319": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 400,
+      "total": 400
+    },
+    "CWE-321": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 224,
+      "total": 224
+    },
+    "CWE-328": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 108,
+      "total": 108
+    },
+    "CWE-338": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 36,
+      "total": 36
+    },
+    "CWE-364": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 36,
+      "total": 36
+    },
+    "CWE-366": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 72,
+      "total": 72
+    },
+    "CWE-367": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 72,
+      "total": 72
+    },
+    "CWE-377": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 288,
+      "total": 288
+    },
+    "CWE-426": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 400,
+      "total": 400
+    },
+    "CWE-506": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 248,
+      "total": 248
+    },
+    "CWE-620": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 36,
+      "total": 36
+    },
+    "CWE-780": {
+      "train": 0,
+      "val": 0,
+      "test_seen": 0,
+      "test_held_out": 36,
+      "total": 36
+    }
+  }
+}

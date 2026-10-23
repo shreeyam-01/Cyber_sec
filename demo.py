@@ -170,7 +170,7 @@ def interactive_demo():
                 print("Code:")
                 print(code.strip())
                 is_vuln, prob, feats = analyze_code_snippet(code, analyzer, llm_encoder, model, device, threshold)
-                status = "VULNERABLE ⚠️" if is_vuln else "SAFE / PATCHED ✅"
+                status = "VULNERABLE" if is_vuln else "SAFE / PATCHED"
                 print(f"\n>> PREDICTION:  {status}")
                 print(f">> CONFIDENCE:  {prob*100:.2f}% (Threshold: {threshold*100:.1f}%)")
         elif choice == "3":
@@ -184,7 +184,7 @@ def interactive_demo():
             code = "\n".join(lines)
             if code.strip():
                 is_vuln, prob, feats = analyze_code_snippet(code, analyzer, llm_encoder, model, device, threshold)
-                status = "VULNERABLE ⚠️" if is_vuln else "SAFE / PATCHED ✅"
+                status = "VULNERABLE" if is_vuln else "SAFE / PATCHED"
                 print(f"\n>> PREDICTION: {status} (Vulnerability Score: {prob*100:.2f}%)")
         elif choice == "4":
             dashboard_path = os.path.join(BASE_DIR, "presentation_dashboard.html")
